@@ -13,22 +13,22 @@ public class Ejercicio1 {
     Las pruebas realizadas para comprobar que el programa funciona son:
         · Introducir un numero menor que 0 y que salga el mensaje de error configurado para este caso
         · Introducir un numero mayor que 9999 y que salga el mensaje de error configurado para este caso
-        · Introducir un número de 1 cifra y que independientemente de cual se salga como resultado capicua
-        · Introducir un numero de dos cifras que sean iguales y que salga como resultado capicua
-        · Introducir un numero de dos cifras que sean distintas y que salga como resultado no capicua
-        · Introducir un numero de tres cifras que sean iguales la primera y la última y que salga como resultado capicua
-        · Introducir un numero de tres cifras que sean distintas la primera y la última y que salga como resultado no capicua
+        · Introducir un número de 1 cifra y que independientemente de cual se salga como resultado capicúa
+        · Introducir un numero de dos cifras que sean iguales y que salga como resultado capicúa
+        · Introducir un numero de dos cifras que sean distintas y que salga como resultado no capicúa
+        · Introducir un numero de tres cifras que sean iguales la primera y la última y que salga como resultado capicúa
+        · Introducir un numero de tres cifras que sean distintas la primera y la última y que salga como resultado no capicúa
         · Introducir un numero de cuatro cifras que sean iguales la primera y la última, y las dos cifras de en medio
-            y que salga como resultado capicua
-        · Introducir un numero de cuatro cifras que sean distintas la primera y la última y que salga como resultado no capicua
+            y que salga como resultado capicúa
+        · Introducir un numero de cuatro cifras que sean distintas la primera y la última y que salga como resultado no capicúa
 
      */
 
     public static void main(String[] args) {
         //Declaramos las variables
-        int num; //Variable donde vamos a guardar el numero introducido por el ususario
+        int num; //Variable donde vamos a guardar el numero introducido por el usuario
         int unidades, decenas, centenas, millares; //Variables donde vamos a guardar las diferentes cifras que
-                                                    // componen al numero introducido por consola
+                                                    // componen al número introducido por consola
 
         //Declaramos el scanner para poder leer por consola
         Scanner sc = new Scanner(System.in);
@@ -68,5 +68,8 @@ public class Ejercicio1 {
             }
         }else
             System.out.println("Numero no valido");
+
+        //Cerramos el scanner
+        sc.close();
     }
 }
