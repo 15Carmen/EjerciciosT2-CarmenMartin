@@ -13,17 +13,25 @@ public class Ejercicio3 {
 
     Nota: Evita que la aplicación realice divisiones por cero.
      */
+
+    /*
+     Las pruebas realizadas para comprobar que el programa funciona son:
+        · Introducir un número de animales menor que 0 y que salga el mensaje de error configurado para este caso
+        · Introducir un número de kgComprados menor que de kgConsumidos y que salga el mensaje de error configurado
+        para este caso
+        · Introducir un número de kgComprados mayor o  igual que los kgConsumidos y que salga el mensaje configurado diciendo
+        que hay comida suficiente para alimentar a los animales.
+     */
     public static void main(String[] args) {
 
-        //Declaramos las variables
+        //Declaramos las variables donde vamos a guardar las respuestas introducidas por el usuario
         int numAnimales;
         double kgComprados, kgConsumidos;
-        // componen al número introducido por consola
 
         //Declaramos el scanner para poder leer por consola
         Scanner sc = new Scanner(System.in);
 
-        //Le pedimos al usuario que introduzca los daros que se le piden y guardamos sus respuestas en las variables
+        //Le pedimos al usuario que introduzca los datos que se le piden y guardamos sus respuestas en las variables
         // anteriormente declaradas
         System.out.println("Introduzca cuántos animales tiene: ");
         numAnimales = sc.nextInt();
@@ -41,11 +49,14 @@ public class Ejercicio3 {
 
             }else{
                 kgConsumidos/=numAnimales;
+
                 System.out.println("Los kilos de comida consumidos no pueden superar a los comprados (¡tus animales se morirán de hambre!).");
                 System.out.println("Tus animales deben consumir al menos "+String.format("%.2f", kgConsumidos)+"kg diariamente");
             }
         }else
             System.out.println("¿Para qúe compras comida de animales si no tienes animales?");
 
+        //cerramos el scanner
+        sc.close();
     }
 }
