@@ -43,30 +43,30 @@ public class Ejercicio1 {
         decenas = (num / 10) % 10;
         unidades = num % 10;
 
-        if (num >= 0 && num <= 9999) {
+        if (num >= 0 && num <= 9999) {                      //Si el número introducido se encuentra entre 0 y 9999
 
-            if (num <= 9) {
+            if (num <= 9) {                                 //Si el número es menor o igual a 9 se imprime que es capicúa
                 System.out.println("Es capicua");
 
-            } else if (num <= 99) {
-                if (unidades == decenas) {
-                    System.out.println("Es capicua");
-                } else
+            } else if (num <= 99) {                         //Si el número es menos o igual que 99
+                if (unidades == decenas) {                  //y las decenas del número son iguales a sus unidades
+                    System.out.println("Es capicua");       //se imprime que es capicúa
+                } else                                      //Si las unidades no son iguales a las decenas se imprime que no es capicúa
                     System.out.println("No es capicua");
 
-            } else if(num<=999) {
-                if (unidades==centenas){
-                    System.out.println("Es capicua");
-                }else
+            } else if(num<=999) {                           //Si el número introducido es menor o igual a 999
+                if (unidades==centenas){                    //y las unidades del número son iguales a sus centenas
+                    System.out.println("Es capicua");       //se imprime que es capicúa
+                }else                                       //Si las unidades no son iguales a las centenas se imprime que no es capicúa
                     System.out.println("No es capicua");
 
-            } else{
-                if (unidades==millares&&decenas==centenas){
-                    System.out.println("Es capicua");
-                }else
+            } else{                                         //Si el número introducido es menor o igual a 9999
+                if (unidades==millares&&decenas==centenas){ //y las unidades del número son iguales a sus millares y las decenas iguales a las centenas
+                    System.out.println("Es capicua");       //se imprime que es capicúa
+                }else                                       //si no es el caso, se imprime que no es capicúa
                     System.out.println("No es capicua");
             }
-        }else
+        }else                                               //Sin no se encuentra el numero en el rango establecido imprimimos un mensaje de error
             System.out.println("Numero no valido");
 
         //Cerramos el scanner
