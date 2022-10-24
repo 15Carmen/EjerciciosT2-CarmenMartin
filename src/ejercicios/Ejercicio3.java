@@ -18,10 +18,14 @@ public class Ejercicio3 {
     /*
      Las pruebas realizadas para comprobar que el programa funciona son:
         · Introducir un número de animales menor que 0 y que salga el mensaje de error configurado para este caso
+                animales = 0 -> "¿Para qúe compras comida de animales si no tienes animales?"
         · Introducir un número de kgComprados menor que de kgConsumidos y que salga el mensaje de error configurado
         para este caso
+               animales=4, kgComprados=2, kgConsumidos=9 -> "Los kilos de comida consumidos no pueden superar a los comprados (¡tus animales se morirán de hambre!)."
+                                                            "Tus animales deben consumir al menos 2.25 kg diariamente"
         · Introducir un número de kgComprados mayor o igual que los kgConsumidos y que salga el mensaje configurado diciendo
         que hay comida suficiente para alimentar a los animales.
+                animales=2, kgComprados=5, kgConsumidos=4 -> "Sí dispone de comida suficiente para alimentar a sus animales. Hoy han consumido 2.5 kg"
      */
     public static void main(String[] args) {
 

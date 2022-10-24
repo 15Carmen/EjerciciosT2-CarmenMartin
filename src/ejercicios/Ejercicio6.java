@@ -13,8 +13,10 @@ public class Ejercicio6 {
     /*
     Las pruebas realizadas para comprobar que el programa funciona son:
         · Introducir un resultado correcto y que se imprima el mensaje de enhorabuena
+                num1=12, num2=5, suma=17 -> "¡Enhorabuena! El resultado introducido es correcto"
         · Introducir un resultado incorrecto y que se imprima el mensaje de consuelo junto con cuál sería el resultado
          correcto
+                num1=12, num2=5, suma=37 -> "Me temo que el resultado es incorrecto. La respuesta correcta era 17"
      */
 
     public static void main(String[] args) {

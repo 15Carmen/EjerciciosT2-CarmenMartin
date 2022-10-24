@@ -16,8 +16,11 @@ public class Ejercicio2 {
     /*
     Las pruebas realizadas para comprobar que el programa funciona son:
         · Introducir un número menor de 8 cifras y que salga el mensaje de error configurado para este caso
+                123456 -> "Debes introducir un número de 8 cifras"
         · Introducir un número mayor de 8 cifras y que salga el mensaje de error configurado para este caso
+                123456789 -> "Debes introducir un número de 8 cifras"
         · Introducir un número de 8 cifras y que el resultado de la letra que le corresponde
+                49117682 -> 49117682D
     */
 
     public static void main(String[] args) {

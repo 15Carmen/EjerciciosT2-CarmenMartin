@@ -11,14 +11,23 @@ public class Ejercicio4 {
     /*
     Las pruebas realizadas para comprobar que el programa funciona son:
         · Introducir un 0
+                0 -> "cero"
         · Introducir un 10
+                10 -> "diez"
         · Introducir un 15
+                15 -> "quince"
         · Introducir un 20
+                20 -> "veinte"
         · Introducir un 37
+                37 -> "treinta y siete"
         · Introducir un 81
+                81 -> "ochenta y uno"
         · Introducir un 50
+                50 -> "cincuenta"
         · Introducir un 100 y que imprima el mensaje de error configurado
+                100 -> "Número introducido no válido"
         · Introducir un -4 y que imprima el mensaje de error configurado
+                -4 -> "Número introducido no válido"
      */
     public static void main(String[] args) {
 

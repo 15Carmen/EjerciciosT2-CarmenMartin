@@ -11,16 +11,25 @@ public class Ejercicio1 {
 
     /*
     Las pruebas realizadas para comprobar que el programa funciona son:
-        · Introducir un numero menor que 0 y que salga el mensaje de error configurado para este caso
-        · Introducir un numero mayor que 9999 y que salga el mensaje de error configurado para este caso
-        · Introducir un número de 1 cifra y que independientemente de cual se salga como resultado capicúa
+        · Introducir un número menor que 0 y que salga el mensaje de error configurado para este caso
+                0 -> "Número no válido"
+        · Introducir un número mayor que 9999 y que salga el mensaje de error configurado para este caso
+                123456 -> "Número no válido"
+        · Introducir un número de 1 cifra y que independientemente de cuál sea salga como resultado capicúa
+                5 -> "Es capicúa"
         · Introducir un numero de dos cifras que sean iguales y que salga como resultado capicúa
+                22 -> "Es capicúa"
         · Introducir un numero de dos cifras que sean distintas y que salga como resultado no capicúa
+                37 -> "No es capicúa"
         · Introducir un numero de tres cifras que sean iguales la primera y la última y que salga como resultado capicúa
+                131 -> "Es capicúa"
         · Introducir un numero de tres cifras que sean distintas la primera y la última y que salga como resultado no capicúa
+                789 -> "No es capicúa"
         · Introducir un numero de cuatro cifras que sean iguales la primera y la última, y las dos cifras de en medio
-            y que salga como resultado capicúa
+          y que salga como resultado capicúa
+                4554 -> "Es capicúa"
         · Introducir un numero de cuatro cifras que sean distintas la primera y la última y que salga como resultado no capicúa
+                1234 -> "No es capicúa"
 
      */
 

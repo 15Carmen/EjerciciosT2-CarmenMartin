@@ -10,7 +10,9 @@ public class Ejercicio5 {
     /*
      Las pruebas realizadas para comprobar que el programa funciona son:
         · Introducir un número menor que 0 y que su valor absoluto sea el número introducido positivo
+                -4 -> 4
         · Introducir un número mayor que 0 y que su valor absoluto sea el mismo número introducido
+                5 -> 5
      */
     public static void main(String[] args) {
 
