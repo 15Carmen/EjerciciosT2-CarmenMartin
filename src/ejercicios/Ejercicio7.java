@@ -11,8 +11,11 @@ public class Ejercicio7 {
     /*
     Las pruebas realizadas para comprobar que el programa funciona son:
         · Introducir hora mayor que 24 y que salga el mensaje de error configurado
+                hora=27 -> "Valores introducidos no válidos"
         · Introducir hora menor que 0 y que salga el mensaje de error configurado
+                hora=-8 -> "Valores introducidos no válidos"
         · Introducir minutos menor que 0 y que salga el mensaje de error configurado
+                hora=3
         · Introducir minutos mayor que 59 y que salga el mensaje de error configurado
         · Introducir segundos menor que 0 y que salga el mensaje de error configurado
         · Introducir segundos mayor que 59 y que salga el mensaje de error configurado
