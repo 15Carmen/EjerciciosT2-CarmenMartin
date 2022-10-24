@@ -12,9 +12,13 @@ public class Ejercicio8 {
     /*
     Las pruebas realizadas para comprobar que el programa funciona son:
         · Introducir una estancia mayor que 7 y una distancia mayor que 800 y que se imprima el precio con descuento
+                estancia=9, distancia=1000 -> "Debe pagar 1750€"
         · Introducir una estancia mayor que 7 y una distancia menor que 800 y que se imprima el precio sin descuento
+                estancia=9, distancia=500 -> "Debe pagar 1250€"
         · Introducir una estancia menor que 7 y una distancia mayor que 800 y que se imprima el precio sin descuento
+                estancia=5, distancia=1000 -> "Debe pagar 2500€"
         · Introducir una estancia menor que 7 y una distancia menor que 800 y que se imprima el precio sin descuento
+                estancia=5, distancia=500 -> "Debe pagar 1250€"
 
      */
     public static void main(String[] args) {

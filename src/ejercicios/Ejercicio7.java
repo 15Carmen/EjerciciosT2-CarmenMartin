@@ -15,14 +15,20 @@ public class Ejercicio7 {
         · Introducir hora menor que 0 y que salga el mensaje de error configurado
                 hora=-8 -> "Valores introducidos no válidos"
         · Introducir minutos menor que 0 y que salga el mensaje de error configurado
-                hora=3
+                hora=3, minutos=-5 -> "Valores introducidos no válidos"
         · Introducir minutos mayor que 59 y que salga el mensaje de error configurado
+                hora=2, minutos=68 -> "Valores introducidos no válidos"
         · Introducir segundos menor que 0 y que salga el mensaje de error configurado
+                hora=7. minutos=46, segundos=-18 -> "Valores introducidos no válidos"
         · Introducir segundos mayor que 59 y que salga el mensaje de error configurado
+                hora=7. minutos=46, segundos=73 -> "Valores introducidos no válidos"
         · Introducir segundos igual a 59 y que devuelva segundos igual a 0 y los minutos sean uno más
+                hora=6, minutos=54, segundos=59 -> "Un segundo después la hora es 6:55:0"
         · Introducir segundos y minutos igual a 59 y que devuelva como resultado segundos y minutos igual a 0
         y que la hora sea una más
+                hora=6, minutos=59, segundos=59 -> "Un segundo después la hora es 7:0:0"
         · Introducir segundos y minutos igual a 59 y hora igual a 23 y que devuelva la hora 0:0:0
+                hora=23, minutos=59, segundos=59 -> "Un segundo después la hora es 0:0:0"
     */
 
     public static void main(String[] args) {
