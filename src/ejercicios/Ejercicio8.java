@@ -25,7 +25,7 @@ public class Ejercicio8 {
 
         //Declaramos las variables
         int distancia, estancia; //Variables donde vamos a guardar las respuestas introducidas por el usuario
-        double precioBillete; //Variable donde vamos a guardar el resultado del cálculo del precio del billete de tren
+        double precioBillete;    //Variable donde vamos a guardar el resultado del cálculo del precio del billete de tren
 
         //Declaramos el scanner par poder leer por consola
         Scanner sc = new Scanner(System.in);
@@ -33,20 +33,20 @@ public class Ejercicio8 {
         //Le pedimos al usuario cuantos km aproximadamente va a recorrer y guardamos la respuesta en la variable
         //previamente declarada
         System.out.println("Introduzca cuántos km va a recorrer aproximadamente: ");
-        distancia=sc.nextInt();
+        distancia = sc.nextInt();
 
-        //Le pedimos ahora al usuario que introduzca cunatos dias durará su estancia y guardamos la respuesta en la
+        //Le pedimos ahora al usuario que introduzca cuantos dias durará su estancia y guardamos la respuesta en la
         //variable previamente declarada
-        System.out.println("Introzca la duración de su estancia: ");
-        estancia=sc.nextInt();
+        System.out.println("Introduzca la duración de su estancia: ");
+        estancia = sc.nextInt();
 
-        if (estancia>7 && distancia>800){                                          //Si la estancia es superior a 7 la distancia mayor que 800
-            precioBillete=(distancia*PRECIO_KM)-((distancia*PRECIO_KM)*DESCUENTO); //Calculamos el precio total con descuento
-            System.out.println("Debe pagar " + precioBillete + "€");               // y lo imprimimos por pantalla
-        }else {                                                                    //Si no es el caso
-            precioBillete=distancia*PRECIO_KM;                                     //Calculamos el precio sin descuento
-            System.out.println("Debe pagar " + precioBillete + "€");               // y lo imprimimos por pantalla
+
+        if (estancia > 7 && distancia > 800) {                                               //Si la estancia es superior a 7 la distancia mayor que 800
+            precioBillete = (distancia * PRECIO_KM) - ((distancia * PRECIO_KM) * DESCUENTO); //Calculamos el precio total con descuento
+        } else {                                                                             //Si no es el caso
+            precioBillete = distancia * PRECIO_KM;                                           //Calculamos el precio sin descuento
         }
+        System.out.println("Debe pagar " + precioBillete + "€");                             // y lo imprimimos por pantalla
 
         //Cerramos el scanner
         sc.close();

@@ -41,27 +41,27 @@ public class Ejercicio7 {
 
 
         if (horas >= 0 && horas <= 23               //Si las horas están en el rango 0-23,
-            && minutos >= 0 && minutos <= 59        //y los minutos y segundo en el rango 0-59
-            && segundos >= 0 && segundos <= 59) {
+                && minutos >= 0 && minutos <= 59    //y los minutos y segundo en el rango 0-59
+                && segundos >= 0 && segundos <= 59) {
             segundos++;                             //sumamos 1 a los segundos introducidos
-            if (segundos==60){                      //Si el resultado de la suma es 60
+            if (segundos == 60) {                   //Si el resultado de la suma es 60
                 segundos = 0;                       //igualamos los segundos a 0
 
                 minutos++;                          //y sumamos 1 a los minutos introducidos
-                if (minutos==60){                   //Si el resultado de la suma es 60
-                    minutos=0;                      //igualamos los minutos a 0
+                if (minutos == 60) {                //Si el resultado de la suma es 60
+                    minutos = 0;                    //igualamos los minutos a 0
 
                     horas++;                        //y sumamos 1 a las horas introducidas
-                    if (horas==24){                 //Si el resultado de la suma es 24
-                        horas=0;                    //igualamos las horas a 0
+                    if (horas == 24) {              //Si el resultado de la suma es 24
+                        horas = 0;                  //igualamos las horas a 0
                     }
                 }
             }
-                                                    //Imprimimos por consola la hora introducida un segundo después
-            System.out.println("Un segundo después la hora es "+ String.format("%d:%d:%d", horas, minutos, segundos));
+            //Imprimimos por consola la hora introducida un segundo después
+            System.out.println("Un segundo después la hora es " + String.format("%d:%d:%d", horas, minutos, segundos));
 
-        }else {                                     //Si las horas, minutos o segundos no entran en el rango establecido
-                                                    //Imprimimos un mensaje de error
+        } else {                                     //Si las horas, minutos o segundos no entran en el rango establecido
+            //Imprimimos un mensaje de error
             System.out.println("Valores introducidos no válidos");
         }
 

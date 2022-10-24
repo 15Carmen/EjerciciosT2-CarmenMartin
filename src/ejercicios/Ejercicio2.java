@@ -23,7 +23,7 @@ public class Ejercicio2 {
     public static void main(String[] args) {
 
         //declaramos las variables
-        int numDni; //Variable donde vamos a guardar el número introducido por el usuario
+        int numDni;   //Variable donde vamos a guardar el número introducido por el usuario
         int letraDni; //Variable donde vamos a guardar el cálculo de la letra del dni proporcionado por el enunciado del ejercicio
 
         //Declaramos el scanner para poder leer por consola
@@ -34,41 +34,41 @@ public class Ejercicio2 {
         numDni = sc.nextInt();
 
         //Calculamos cuál sería la letra del dni como se nos especifica en el enunciado del ejercicio
-        letraDni = numDni%23;
+        letraDni = numDni % 23;
 
         // Con un if nos aseguramos que el usuario solo pueda introducir un número de 8 cifras. Si introduce alguno
         // ya sea mayor o menor de 8 cifras salta un mensaje de advertencia al usuario de que el número introducido no es válido
-        if (numDni>9999999 && numDni<=99999999){
+        if (numDni > 9999999 && numDni <= 99999999) {
 
             //Una vez que nos aseguramos que el número introducido tiene el número correcto de cifras, creamos un switch
             //para que se imprima la letra que le corresponde al resultado de la cuenta realizada anteriormente.
-            switch (letraDni){
-                case 0-> System.out.println(numDni+"T");
-                case 1-> System.out.println(numDni+"R");
-                case 2-> System.out.println(numDni+"W");
-                case 3-> System.out.println(numDni+"A");
-                case 4-> System.out.println(numDni+"G");
-                case 5-> System.out.println(numDni+"M");
-                case 6-> System.out.println(numDni+"Y");
-                case 7-> System.out.println(numDni+"F");
-                case 8-> System.out.println(numDni+"P");
-                case 9-> System.out.println(numDni+"D");
-                case 10-> System.out.println(numDni+"X");
-                case 11-> System.out.println(numDni+"B");
-                case 12-> System.out.println(numDni+"N");
-                case 13-> System.out.println(numDni+"J");
-                case 14-> System.out.println(numDni+"Z");
-                case 15-> System.out.println(numDni+"S");
-                case 16-> System.out.println(numDni+"Q");
-                case 17-> System.out.println(numDni+"V");
-                case 18-> System.out.println(numDni+"H");
-                case 19-> System.out.println(numDni+"L");
-                case 20-> System.out.println(numDni+"C");
-                case 21-> System.out.println(numDni+"K");
-                case 22-> System.out.println(numDni+"E");
+            switch (letraDni) {
+                case 0 -> System.out.println(numDni + "T");
+                case 1 -> System.out.println(numDni + "R");
+                case 2 -> System.out.println(numDni + "W");
+                case 3 -> System.out.println(numDni + "A");
+                case 4 -> System.out.println(numDni + "G");
+                case 5 -> System.out.println(numDni + "M");
+                case 6 -> System.out.println(numDni + "Y");
+                case 7 -> System.out.println(numDni + "F");
+                case 8 -> System.out.println(numDni + "P");
+                case 9 -> System.out.println(numDni + "D");
+                case 10 -> System.out.println(numDni + "X");
+                case 11 -> System.out.println(numDni + "B");
+                case 12 -> System.out.println(numDni + "N");
+                case 13 -> System.out.println(numDni + "J");
+                case 14 -> System.out.println(numDni + "Z");
+                case 15 -> System.out.println(numDni + "S");
+                case 16 -> System.out.println(numDni + "Q");
+                case 17 -> System.out.println(numDni + "V");
+                case 18 -> System.out.println(numDni + "H");
+                case 19 -> System.out.println(numDni + "L");
+                case 20 -> System.out.println(numDni + "C");
+                case 21 -> System.out.println(numDni + "K");
+                case 22 -> System.out.println(numDni + "E");
             }
 
-        }else
+        } else
             System.out.println("Debes introducir un numero de 8 cifras");
 
         //Cerramos el scanner

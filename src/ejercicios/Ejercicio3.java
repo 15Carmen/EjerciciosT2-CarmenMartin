@@ -1,5 +1,6 @@
 package ejercicios;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Ejercicio3 {
@@ -31,6 +32,9 @@ public class Ejercicio3 {
         //Declaramos el scanner para poder leer por consola
         Scanner sc = new Scanner(System.in);
 
+        //Para poder introducir decimales con un punto en vez de una coma cambiamos el uso local al de EEUU
+        sc.useLocale(Locale.US);
+
         //Le pedimos al usuario que introduzca los datos que se le piden y guardamos sus respuestas en las variables
         // anteriormente declaradas
         System.out.println("Introduzca cuántos animales tiene: ");
@@ -40,20 +44,20 @@ public class Ejercicio3 {
         System.out.println("Introduzca la cantidad de comida que consumen los animales diariamente: ");
         kgConsumidos = sc.nextDouble();
 
-        if (numAnimales>0){                 //Si el número de animales introducidos es mayor de 0
-            if (kgComprados>=kgConsumidos){ //Si los kg comprados son mayores que los consumidos
+        if (numAnimales > 0) {                 //Si el número de animales introducidos es mayor de 0
+            if (kgComprados >= kgConsumidos) { //Si los kg comprados son mayores que los consumidos
 
-                kgComprados/=numAnimales;   //calculamos cuantos kg han consumido ese dia los animales y lo imprimimos por pantalla
-                System.out.println("Sí dispone de comida suficiente para alimentar a sus animales. Hoy han consumido "+
-                        String.format("%.2f", kgComprados)+"kg");
+                kgComprados /= numAnimales;    //calculamos cuantos kg han consumido ese dia los animales y lo imprimimos por pantalla
+                System.out.println("Sí dispone de comida suficiente para alimentar a sus animales. Hoy han consumido " +
+                        String.format("%.2f", kgComprados) + "kg");
 
-            }else{                          //Si los kg consumidos son mayores que los comprados
-                kgConsumidos/=numAnimales;  //Calculamos cuantos kg deberían haber consumido como mínimo ese dia y lo imprimimos por pantalla
+            } else {                           //Si los kg consumidos son mayores que los comprados
+                kgConsumidos /= numAnimales;   //Calculamos cuantos kg deberían haber consumido como mínimo ese dia y lo imprimimos por pantalla
 
                 System.out.println("Los kilos de comida consumidos no pueden superar a los comprados (¡tus animales se morirán de hambre!).");
-                System.out.println("Tus animales deben consumir al menos "+String.format("%.2f", kgConsumidos)+"kg diariamente");
+                System.out.println("Tus animales deben consumir al menos " + String.format("%.2f", kgConsumidos) + "kg diariamente");
             }
-        }else                               //Si el número de animales introducidos es menor que 0 imprimimos un mensaje de error
+        } else                                 //Si el número de animales introducidos es menor que 0 imprimimos un mensaje de error
             System.out.println("¿Para qúe compras comida de animales si no tienes animales?");
 
         //cerramos el scanner
