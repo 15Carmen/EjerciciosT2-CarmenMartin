@@ -42,5 +42,7 @@ public class Ejercicio6 {
         }else
             System.out.println("Me temo que el resultado es incorrecto. La respuesta correcta era "+ (num1+num2));
 
+        //Cerramos el scanner
+        sc.close();
     }
 }
